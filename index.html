@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./assets/img/pizza-slice-solid.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./assets/css/estilos.css">
+    <link href="./assets/css/bootstrap.css" rel="stylesheet">
+    <title>Buona Pizza</title>
+  </head>
+  <body onload="asignarEventos()">
+    
+    <header>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-4 bg-success">
+            <h1 id="pizzeria">Buona Pizza</h1>
+
+          </div>
+          <div class="col-4 bg-light">
+            
+          </div>
+          <div class="col-4 bg-danger">
+            
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <br><br>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-6">
+          <div>
+            <h3 class="sub">SELECCIONA TU PIZZA</h3>
+            <br>
+            <form>
+              <input type="checkbox" name="pizzaS" id="pizzaS">
+              <label for="pizzaS">Pizza S</label> <br>
+              <input type="checkbox" name="pizzaM" id="pizzaM">
+              <label for="pizzaM">Pizza M</label> <br>
+              <input type="checkbox" name="pizzaL" id="pizzaL">
+              <label for="pizzaL">Pizza L</label> <br>
+              <input type="checkbox" name="pizzaXL" id="pizzaXL">
+              <label for="pizzaXL">Pizza XL</label> <br>
+            </form> <br><br>
+          </div>
+          <div>
+            <h3 class="sub">MEJORA TU PIZZA</h3>
+          </div>
+          <br>
+          <div>
+            <p>Puede elegir 3 ingredientes gratis. Cada ingrediente adicional cuesta $800 pesos cada uno.</p>
+
+            <form>
+              <input type="checkbox" name="carne" id="carne">
+              <label for="carne">Carne</label> <br>
+
+              <input type="checkbox" name="pollo" id="pollo">
+              <label for="pollo">Pollo</label> <br>
+
+              <input type="checkbox" name="tocino" id="tocino">
+              <label for="tocino">Tocino</label> <br>
+
+              <input type="checkbox" name="mozzarella" id="mozzarella">
+              <label for="mozzarella">Mozzarella</label> <br>
+
+              <input type="checkbox" name="champinon" id="champinon">
+              <label for="champinon">Champiñón</label> <br>
+
+              <input type="checkbox" name="cebolla" id="cebolla">
+              <label for="cebolla">Cebolla</label> <br>
+
+              <input type="checkbox" name="pina" id="pina">
+              <label for="pina">Piña</label> <br>
+
+              <input type="checkbox" name="pimenton" id="pimenton">
+              <label for="pimenton">Pimentón</label> <br> <br>
+
+            </form>
+
+            <div id="contenedorSeleccionados">
+              <p>Los ingredientes seleccionados son: <span id="ingredientesSeleccionados"></span></p>
+            </div>
+
+            <div id="contenedorExtras">
+              <p>Los ingredientes seleccionados <strong>extras</strong> son: <span id="ingredientesExtras"></span></p>
+
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="col-6">
+          <div>
+            <h3 class="sub">RESUMEN DEL PEDIDO</h3>
+          </div>
+          <br>
+          <div class="divPizza">
+            <p>Pizza:</p>
+          </div>
+          <hr>
+          <div class="divCostoExtra">
+            <p>Ingredientes extras:</p>
+            <p id="costoExtra">$0</p>
+          </div>
+          <hr>
+          <div class="divPropina">
+            <p>Propina:</p>
+            <p id="costoPropina"> $0</p>
+          </div>
+          <hr>
+          <div class="divTotal">
+            <p>Total:</p>
+            <p id="total"> $0</p>
+          </div>
+          <hr> <br>
+          <form>
+            <input type="button" class="btn btn-success" name="avisoPropina" id="btnAvisoPropina" value="Enviar Pedido"> <br><br>  
+            <input type="button" class="btn btn-success" name="btnPropina" id="btnPropina" value="Enviar Pedido con Propina">
+            <input type="number" name="propina" id="propina" placeholder="Ingresa Propina">
+            
+          </form>
+
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-4 bg-success">
+
+          </div>
+          <div class="col-4 bg-light">
+            
+          </div>
+          <div class="col-4 bg-danger d-flex justify-content-end" style="color:white">
+            <p>Creado por Raúl Rojo</p>
+            
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+
+
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

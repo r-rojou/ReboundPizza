@@ -1,0 +1,44 @@
+.divPizza{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: space-between;
+
+}
+
+.pizza-item{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.divCostoExtra{
+    display: flex;
+    justify-content: space-between;
+}
+
+.divPropina{
+    display: flex;
+    justify-content: space-between;
+}
+
+.divTotal{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+}
+
+.sub{
+    width: 350px;
+    padding-left: 1%;
+    background-color: rgba(170, 149, 149, 0.534);
+    border-radius: 10px;
+
+}
