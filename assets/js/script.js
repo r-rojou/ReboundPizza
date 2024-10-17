@@ -125,7 +125,7 @@ let agregarPropina = ()=>{
 let avisoPropina = ()=>{
     // Comprobación de propina
     if (propinaTotal === 0){
-           
+
         alert('Por favor, ingrese propina.');
     }
 
@@ -164,7 +164,5 @@ const calcularTotal = ()=>{
     // Muestra total en el div
 
     document.getElementById('total').textContent = `$${total}`;
-
-
 
 }
